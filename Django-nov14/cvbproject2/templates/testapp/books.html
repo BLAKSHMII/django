@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>this is books infromation custimzed template file</h1>
+    <h2><center>detail for books</center></h2>
+    <!--<div class='container'>
+        {% for book in books %}
+            <ul>
+            <li>Title:<strong>{{book.title}}</strong></li>
+            <li>author:<strong>{{book.author}}</strong></li>
+            <li>pages:<strong>{{book.pages}}</strong></li>
+            <li>price:<strong>{{book.price}}</strong></li>
+            </ul>
+        <hr>
+        </ol>
+        {% endfor %}    
+    </div>-->
+    <div class="container">
+        <ol>
+           {% for book in books%}
+           <li><a href="/{{book.id}}">{{book.title}}</a></li>
+           {% endfor %}
+        </ol>
+    </div>
+</body>
+</html>
