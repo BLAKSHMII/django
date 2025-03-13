@@ -1,0 +1,66 @@
+<!-- 
+ 1.carousel is used design  sliding and fadding in the web page
+ 2.we can control the this carousel by manually or autho limit timing
+ Basic carousel classes
+.carousel===
+.carousel-inner==
+.carosel-item==
+Note-1: make sure that any one  carosel-item should be active not all active
+Note-2:carousel does not cantaion default slide move annimation ,so we have to use attribute "data-bs-ride=carousel"
+Note-3:carousel do'nt have smoothaninimation we have use class ="slide" or class="carousel-fade"
+===carousel control===(prev and next clicks)
+-----classes------
+  .carousel-control-prev
+  .carousel-control-next
+  .carousel-control-prev-icon
+  .carousel-control-next-icon
+----attributes----
+    1.data-bs-slide="prev"
+    2.data-bs-slide="next"
+    3.data-bs-target="#carousel_id"
+    4.data-bs-theme="dark"
+---carosel indicaticator-------(useful to navigate=goto to pertical image )
+ .class=carousel class
+ -----attributes-----
+ 1.data-bs-slide-to=[0]"index"
+ 2.data-bs-interval=1000millsec=1sec
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <div class="carousel carousel-fade" data-bs-theme="dark" data-bs-ride="carousel" id="banner">
+        <div class="carousel-inner">
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="images/m1.jpg" class="w-100 d-block">
+            </div>
+            <div class="carousel-item active" data-bs-interval="1000">
+              <img src="images/m2.jpg " class="w-100 d-block">
+              <button class="btn btn-danger"></button>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/m3.gif " class="w-100 d-block">  
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banner">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button class="active" data-bs-slide-to="0" data-bs-target="#banner"></button>
+            <button data-bs-slide-to="1" data-bs-target="#banner"></button>
+            <button data-bs-slide-to="2" data-bs-target="#banner"></button> 
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>  
+</body>
+</html>

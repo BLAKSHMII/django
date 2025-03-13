@@ -1,0 +1,33 @@
+<!--
+Offcanvas is similar to modal but provides dialog than can span in any orentation(like top or left or bittu,right)
+it is good uses in nav-bars
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body class="container-fluid">
+    <button class=" btn btn-primary bi bi-justify" data-bs-toggle="offcanvas" data-bs-target="#navbar"></button>
+    <nav class="offcanvas offcanvas-start" id="navbar" tabindex="-1" >
+    <div class="offcanvas-header bg-danger">
+        <h1>Amazon</h1>
+        <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+            <ol>
+                <li>Electronisc</li>
+                <li>fashoin</li>
+                <li>Footware</li>
+            </ol>
+    </div>
+</nav>
+ <script type="module" src="../node_modules/jquery/dist/jquery.js"></script>   
+ <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!--
+### Navbar###
+1.it configure responsive navigation
+2.it can can change according screen,orientation,width and other values
+---classes---
+.navbar
+.navbar-expand lg|sm
+.navbar-brand
+.navbar-collapse
+.navbar-dark
+.navbar-conceptual
+.navbar-nav
+.nav-item
+.nav-link
+--->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+       <div class="container-fluid">
+           <h2 class="navbar-brand">shoper</h2>
+           <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link">Home</a></li>
+                    <li class="nav-item"><a class="nav-link">About</a></li>
+                    <li class="nav-item"><a class="nav-link">pages</a></li>
+                    <li class="nav-item"><a class="nav-link">shop</a></li>
+                </ul>
+            </div>
+            <div class="input-group">
+                <select class="input-group-text">
+                    <option>all</option>  
+                </select>
+                <input type="text" class="form-control">
+                <button class="bi bi-search btn btn-warning br-warning"></button>
+
+            </div>
+       </div>
+   </nav>
+    
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

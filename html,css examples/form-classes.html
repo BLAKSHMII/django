@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center" style="height:100vh;">
+    <form class="border border-2 border-dark p-3 w-25 bg-dark text-white">
+     <h3 class="bi bi-person-fill">Register User</h3>
+     <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <div>
+            <input type="text" name="username" class="form-control">
+        </div>
+     </div>
+     <div class="mb-3">
+        <label for="password" class="form-label" >Password</label>
+        <div>
+           <input type="text" name="password" class="form-control">
+        </div>
+     </div>
+     <div class="mb-3">
+        <label for="age" class="form-label">Age</label>
+        <div>
+            <input type="range" name="age" class="form-range">
+        </div>
+     </div>
+     <div class="mb-3">
+        <label for="city" class="form-label">City</label>
+        <div>
+            <select name="city" class="form-select">
+                <option>delhi</option>
+                <option>hyd</option>
+                <option>gun</option>
+            </select>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="subscriber" class="form-label">Subscriber</label>
+        <div class="form-switch">
+            <input type="checkbox" name="subscriber" class="form-check-input" checked><label class="form-check-label">Yes</label>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="file" class="form-label">Choice file</label>
+        <div>
+            <input type="file" name="file" class="form-control-file">
+        </div>
+    </div>
+    <div class="mb-3">
+         <label for="color" class="form-label">Color</label>
+         <div>
+            <input type="color" class="form-control">
+         </div>
+    </div>
+    <button class="btn btn-warning w-100" >Register</button>
+    </form>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

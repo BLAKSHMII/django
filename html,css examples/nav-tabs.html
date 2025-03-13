@@ -1,0 +1,93 @@
+<!--
+----nav & tab-----
+1.they can create tab based (renering=display) navigations=painting=goto
+2.you can display multiple categories in one web page
+3.user can switch b/w categories dynamically
+----classes----
+.nav # display side by side 
+.nav-tabs
+.nav-items
+.nav-pills
+.nav-link
+.tab-content
+.tab-pane
+.active
+in <a> you can use href as data-bs-toggle for link
+
+
+### Navbar###
+1.it configure responsive navigation
+2.it can can change according screen,orientation,width and other values
+---classes---
+.navbar
+.navbar-expand lg|sm
+.navbar-brand
+.navbar-collapse
+.navbar-dark
+.navbar-conceptual
+.navbar-nav
+.nav-item
+.nav-link
+--->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <div>
+        <h1>shoper</h1>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a  href="#login" data-bs-toggle="tab" class="nav-link active">Login</a></li>
+            <li class="nav-item"><a href="#register" data-bs-toggle="tab" class="nav-link">Register</a></li>
+            <li class="nav-item"><a href="#recover" data-bs-toggle="tab" class="nav-link">Recover Account</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="login">
+                <dl>
+                    <dt>Username</dt>
+                    <dd><input type="text"></dd>
+                    <dt>pwd</dt>
+                    <dd><input type="text"></dd>
+                </dl>
+                <button class="btn btn-primary">Login</button>
+            </div>
+            <div class="tab-pane " id="register">
+                <dl>
+                    <dt>Username</dt>
+                    <dd><input type="text"></dd>
+                    <dt>pwd</dt>
+                    <dd><input type="password"></dd>
+                    <dt>Age</dt>
+                    <dd><input type="number"></dd>
+
+                </dl>
+                <button class="btn btn-primary">Register</button>
+            </div>
+            <div class="tab-pane" id="recover">
+                <dl>
+                    <dt>Username</dt>
+                    <dd><input type="text"></dd>
+                    <dt>pwd</dt>
+                    <dd><input type="password"></dd>
+                    <dt>Age</dt>
+                    <dd><input type="number"></dd>
+                    <dt>Mobile</dt>
+                    <dd><input type="text"></dd>
+                </dl>
+                <button class="btn btn-primary">Recover Account</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

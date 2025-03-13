@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--alerts is  embbredrd or the part content or popup or  in the pages which are controlled dynamically-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center" style="height:100vh;">
+    <form class=" alert alert-warning alert-dismissible">
+        <h3 class="bi bi-person-fill">Register</h3>
+        <button class="btn btn-close" data-bs-dismiss="alert"></button>
+        <dt>username</dt>
+        <input type="text" class="form-control">
+        <dt>password</dt>
+        <input type="password" class="form-control">
+        <button class="btn btn-warning w-100">login</button>
+    </form>
+    <div class="alert alert-danger alert-dismissible">
+        <h3 class="alert-title">Record Deleted</h3>
+        <button data-bs-dismiss="alert" class="btn btn-close" ></button>
+        <p class="alert-subtitle">your record deleted successfully</p>
+        <a href="#" class="alert-link">Help</a>
+    </div>
+    <div class="alert alert-danger alert-dismissible">
+        <h3 class="alert-title">Record inserted</h3>
+        <p class="alert-subtitle">your record inserted successfully</p>
+        <a href="#" class="alert-link">Help</a>
+        <BR><BR>
+        <button class="btn btn-success" data-bs-dismiss="alert">OK</button>
+    </div>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
