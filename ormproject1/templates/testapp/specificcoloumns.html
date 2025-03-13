@@ -1,0 +1,51 @@
+specificcolumns.html
+---------------------------------
+<h1>Employee Information DashBoard</h1>
+<table border="3">
+  <thead>
+    <th>Employee Name</th>
+    <th>Employee Salary</th>
+  </thead>
+  {% for emp in emp_list %}
+  <tr>
+    {% for v in emp %}
+    <td>{{v}}</td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+
+2).By using values()
+2).By using values()
+-----------------------------
+emp_list = Employee.objects.all().values('ename','esal')
+
+html
+-------
+{% for emp in emp_list %}
+  <tr>
+    {% for k,v in emp.items %}
+    <td>{{v}}</td>
+    {% endfor %}
+  </tr>
+{% endfor %}
+
+3).By using only():
+---------------------------
+emp_list = Employee.objects.all().only('ename','esal')
+
+html
+--------
+{% for emp in emp_list %}
+  <tr>
+    <td>{{emp.ename}}</td>
+    <td>{{emp.esal}}</td>
+  </tr>
+{% endfor %}
+
+Note:
+	values_list()--->QuerySet contains tuple
+	values()--->QuerySet contains dict objects
+	only()--->QuerySet contains Employee objects
+
+-->Hence values() method is recommended to use when compared with others.
