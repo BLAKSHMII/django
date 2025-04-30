@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+    <h1>Employee Dashboard!..</h1>
+    {% if emp_list %}
+    <table border="3" align="center">
+          <thead>
+            <th>Employee Name</th>
+            <th>Employee Salary</th>
+          </thead>
+          {% for emp in emp_list %} <!-- no of rows(repeted)in for, row wise data td printed
+          if emp is in emplist print all emplyee details in row.upto to end employee(no. times(for loop)-->
+          <!-- <tr>
+            { for val in emp }
+            <td>{{val}}</td>
+            { endfor }
+          </tr> ===> tuple value reading-->
+          <!--<tr>
+            <td>{{emp}}</td>
+            { for key,val in emp.items }
+            <td>{{val}}</td>
+            { endfor }===> for dict 
+          </tr>-->
+          <tr>
+            <td>{{emp.ename}}</td>
+            <td>{{emp.esal}}</td>
+          </tr>
+          {% endfor %}
+
+    </table>
+    {% else %}
+    <p>No Employee Information found!....</p>
+    {% endif %}
+</body>
+</html>
